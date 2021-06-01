@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="survey_form.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Reggae+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <h1 id="title">Suggestions to Team Triad </h1>
+        <p id="description">Thank you for providing us a feedback</p>
+        <form action="submit" id="survey-form">
+            <div class="sub-category">
+                <label id="name-label" for="name">Your Name:</label>
+                <input class="input-element" type="text" id="name" placeholder="Name in Caps" required>
+            </div>
+            <div class="sub-category">
+                <label for="email" id="email-label">Your Email Address:</label>
+                <input class="input-element" id="email" type="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="sub-category">
+                <label for="number" id="number-label">Your Experience:</label>
+                <input class="input-element" min="3" max="25" type="number" name="experience" id="number" placeholder="Minimum 3 years is experience is needed">
+            </div>
+            <div class="sub-category">
+                <label for="lang">Lauguages known:</label>
+                <select class="input-element" name="languages" id="dropdown" >
+                    <option value="tamil">Tamil</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="malayalam">Malayalam</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="kannadam">Kannadam</option>
+                    <option value="" selected disabled></option>
+                </select>
+            </div>
+            <div class="sub-category">
+            <fieldset>
+                <legend>Gender:</legend>
+                <label>Male <input type="radio" name="gender" value="male"></label><br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female"><br>
+                <label for="others">Others</label>
+                <input type="radio" name="gender" id="others" value="others"><br>
+            </fieldset>
+            </div>
+            <div class="sub-category"> 
+                <fieldset>
+                    <legend>Interests</legend>
+                    <input type="checkbox" name="interest" id="coding" value="coding">
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" name="interest" id="reading" value="reading">
+                    <label for="reading">Reading</label><br>
+                    <input type="checkbox" name="interest" id="blogging" value="blogging">
+                    <label for="blogging">Blogging</label><br>
+                    <input type="checkbox" name="interest" id="vlogging" value="vlogging">
+                    <label for="vlogging">Vlogging</label><br>
+                    <input type="checkbox" name="interest" id="docu" value="watching documentary">
+                    <label for="docu">Watching Documentaries</label><br>
+                </fieldset>
+            </div>
+            <div class="sub-category">
+                <label for="additional">Post your additional thoughts here:</label>
+                <textarea class="input-element" name="extra" id="additional" cols="24" rows="7"></textarea>
+            </div>
+            <div class="sub-category">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </body>
+</html>
